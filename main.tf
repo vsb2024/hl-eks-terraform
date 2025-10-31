@@ -77,8 +77,8 @@ module "eks" {
 
   # EKS Managed Node Group
   eks_managed_node_groups = {
-    game_nodes = {
-      name = "${var.cluster_name}-node-group"
+    game = {
+      name = "hl-game-ng"
 
       instance_types = var.node_instance_types
       capacity_type  = "ON_DEMAND"
